@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Pokedex from './pages/Pokedex';
 import PokemonDetail from './pages/PokemonDetail';
 
-const App = () => {
+function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -11,6 +11,6 @@ const App = () => {
       <Route path="/pokemon/:id" element={<PokemonDetail />} />
     </Routes>
   );
-};
+}
 
 export default App;
